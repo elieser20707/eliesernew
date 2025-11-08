@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Website</title>
+
+  <style>
+    /* --- Global Styles --- */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* --- Navigation Bar --- */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 0;
+    }
+
+    nav {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #4a90e2;
+    }
+
+    /* --- Hero Section --- */
+    .hero {
+      background: linear-gradient(to right, #4a90e2, #50c9c3);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .hero a {
+      background: white;
+      color: #4a90e2;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .hero a:hover {
+      background: #333;
+      color: white;
+    }
+
+    /* --- About Section --- */
+    .about {
+      padding: 60px 20px;
+      background: white;
+      text-align: center;
+    }
+
+    .about h2 {
+      margin-bottom: 20px;
+      font-size: 2em;
+      color: #333;
+    }
+
+    .about p {
+      max-width: 600px;
+      margin: 0 auto;
+      color: #555;
+    }
+
+    /* --- Footer --- */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      .hero h1 {
+        font-size: 2.2em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <nav>
+      <div class="logo">MyWebsite</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to My Website</h1>
+    <p>Your one-stop destination for creativity, design, and innovation.</p>
+    <a href="#about">Learn More</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      We are a passionate team dedicated to building simple, modern, and responsive
+      websites. Our mission is to make the web beautiful and easy to use.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MyWebsite. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
